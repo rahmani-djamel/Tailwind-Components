@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-cyan-500 mb-3">
+            <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+              <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+                <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
+                  pink Color
+                </a>
+                <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                    <i class="fas fa-bars text-xl text-white"></i>
+                </button>
+              </div>
+              <div class="lg:flex flex-grow items-center" id="example-collapse-navbar">
+                <ul class="flex flex-col lg:flex-row list-none ml-auto">
+                    <li class="nav-item">
+                      <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
+                        <span class="block lg:hidden">
+                            <i class="fa-solid fa-house px-2 text-xl"></i>
+                        </span>
+                        
+                        Home
+                        
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
+                        <span class="block lg:hidden">
+                            <i class="fa-solid fa-address-card px-2 text-xl"></i>
+                        </span>
+                        About Us
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
+                          <span class="block lg:hidden text-white">
+                              <i class="fa-solid fa-comment px-2 text-xl"></i>
+                          </span>
+                          Contact Us
+                        </a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="profile">
+        <section id="carts" class="mx-2">
+            <div class="container">
+                <div class="grid lg:grid-cols-3 grid-rows-4  gap-3">
+                    <div class="border-0 border-r-4 border-r-cyan-800">  
+                        <a href="#" class="flex flex-col items-center bg-white  border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="images/maksym-tymchyk-06HCXSpu7Dw-unsplash.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            </div>
+                         </a>
+                    </div>
+                    <div class="">  
+                        <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="images/sekwang-chia-ioiK8s7R5rQ-unsplash.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            </div>
+                         </a>
+                    </div>
+                    <div class="">  
+                        <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="images/lawrence-kayku-ZVKr8wADhpc-unsplash.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            </div>
+                         </a>
+                    </div>          
+                </div>       
+            </div>   
+        </section>
+       
+    </main>
+    <script>
+        function toggleNavbar(collapseID){
+          document.getElementById(collapseID).classList.toggle("hidden");
+          document.getElementById(collapseID).classList.toggle("flex");
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.imgTop {
+    height: 160;
+    width: 160;
+    top: -10%;
+    left: -10%;
+}
